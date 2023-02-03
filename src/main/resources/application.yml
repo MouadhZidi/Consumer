@@ -1,0 +1,17 @@
+   
+server:
+  port: 8081
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    listener:
+      missing-topics-fatal: false
+
+  datasource:
+    url: jdbc:oracle:thin:@//192.168.3.206:1521/DBSONEDE
+    username: grh_bea
+    password: GRH_BEA  
+    driver-class-name: oracle.jdbc.OracleDriver 
+producer:
+  kafka:
+    topic-name: notifff    
