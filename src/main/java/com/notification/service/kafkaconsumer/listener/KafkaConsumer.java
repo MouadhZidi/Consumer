@@ -17,7 +17,7 @@ public class KafkaConsumer {
     @Autowired
     SimpMessagingTemplate template;
 
-    @KafkaListener(topics = "notifff", groupId = "notification-group-id", containerFactory = "kakfaListenerContainerFactory")
+    @KafkaListener(topics = "arabe", groupId = "notification-group-id", containerFactory = "kakfaListenerContainerFactory")
 
     public void listenSenderEmail(String data) {
 
