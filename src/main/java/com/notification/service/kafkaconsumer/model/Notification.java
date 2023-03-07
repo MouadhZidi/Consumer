@@ -34,12 +34,19 @@ public class Notification {
 
 	private String etat_notif_agent;
 
+	private String rep_chef;
+
 	
 
-	public Notification(Date date_notif, String libelle_notif, String nom, String type_notif, String cod_soc,
-			String mat_pers, String id_sender, String id_reciver, Long counter, String etat_notif,
-			String etat_notif_agent) {
+
+
+
+
+	public Notification(Long id_notif, Date date_notif, String libelle_notif, String nom, String type_notif,
+			String cod_soc, String mat_pers, String id_sender, String id_reciver, Long counter, String etat_notif,
+			String etat_notif_agent, String rep_chef) {
 		super();
+		this.id_notif = id_notif;
 		this.date_notif = date_notif;
 		this.libelle_notif = libelle_notif;
 		this.nom = nom;
@@ -51,39 +58,19 @@ public class Notification {
 		this.counter = counter;
 		this.etat_notif = etat_notif;
 		this.etat_notif_agent = etat_notif_agent;
+		this.rep_chef = rep_chef;
 	}
 
 
 
-	public Notification(Date date_notif, String libelle_notif, String nom, String type_notif, String cod_soc,
-			String mat_pers, String id_sender, String id_reciver, Long counter) {
-		super();
-		this.date_notif = date_notif;
-		this.libelle_notif = libelle_notif;
-		this.nom = nom;
-		this.type_notif = type_notif;
-		this.cod_soc = cod_soc;
-		this.mat_pers = mat_pers;
-		this.id_sender = id_sender;
-		this.id_reciver = id_reciver;
-		this.counter = counter;
+	public String getRep_chef() {
+		return rep_chef;
 	}
 
 
 
-	public Notification(Date date_notif, String libelle_notif, String nom, String type_notif, String cod_soc,
-			String mat_pers, String id_sender, String id_reciver, Long counter, String etat_notif) {
-		super();
-		this.date_notif = date_notif;
-		this.libelle_notif = libelle_notif;
-		this.nom = nom;
-		this.type_notif = type_notif;
-		this.cod_soc = cod_soc;
-		this.mat_pers = mat_pers;
-		this.id_sender = id_sender;
-		this.id_reciver = id_reciver;
-		this.counter = counter;
-		this.etat_notif = etat_notif;
+	public void setRep_chef(String rep_chef) {
+		this.rep_chef = rep_chef;
 	}
 
 
